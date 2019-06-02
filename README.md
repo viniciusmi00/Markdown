@@ -47,7 +47,7 @@ Para colocar um ~~riscado~~ na palavra ou sentença bastar adicionar dois tis (~
 
 
 ## Citação
-> Para fazer um **comnetário** _(citação)_, basta colocar um simbolo de maior (>) no início da sentença.
+> Para fazer um **comentário** _(citação)_, basta colocar um simbolo de maior (>) no início da sentença.
 
 
 
@@ -158,3 +158,115 @@ Também pode utilizar imagem, link e variáveis para mostrar a imagem e direcion
 [![NodeJS][endereco-imagem]][endereco-node]
 
 
+
+# Tabelas
+Para criar tabela, utilizasse Pipe (|) para separar os campos, e é necessário fazer uma linha abaixo do cabeçalho da tabela, com Pipe (|), separando o Pipe (|) por traços (-) para o Markdown identificar como tabela. É necessário ter a mesma quantidade de separações do Pipe (|) com traços (-) na segunda linha, que tem em campos na primeira (cabeçalho). E para separar os valores em colunas, também se usa Pipe (|) entre os valores.
+Obs: Por estética, pode se usar mais de um traço (-), fazendo a escrita do código fonte da tabela ficar uniforme. 
+
+| Nome | Idade |
+| ---- | ----- |
+| João |  30   |
+| Maria|  40   |
+
+## Alinhamento da Tabela
+Por padrão, o _alinhamento_ das células da tabela é a esquerda. O alinhamento é feito por dois pontos : na segunda coluna. Se colocar os dois pontos : a esquerda do traço (-), significa que o alinhamento ficará a esquerda. Se colocar os dois pontos : a esquerda e a direita do traço (-), significa que o alinhamento será centralizado. Se colocar os dois pontos : a direita do traço (-), significa que o alinhamento será a direita.
+
+ ### Centralizado
+| Nome | Idade | Profissão |
+| :----: | :-----: | :---------: |
+| Joao | 30    | Programador |
+| Maria| 40    | Dentista |
+| Marcio | 21  | Estudante |
+| Guilherme | 25 | Marceneiro |
+
+### A Direita
+| Nome | Idade | Profissão |
+| ----: | -----: | ---------: |
+| Joao | 30    | Programador |
+| Maria| 40    | Dentista |
+| Marcio | 21  | Estudante |
+| Guilherme | 25 | Marceneiro |
+
+
+# Códigos
+
+## Exemplo em linha
+Para destacar palavras com fonte de código, basta utilizar craze (`) no início e no final da palavra ou sentença.
+
+Exemplo: Informe o `Login` e a `Senha` para a função `login()`.
+
+Ha alguns momentos em que a utilização da crase (`) prejudicará a escrita de um código completo no Markdown. Um exemplo é no JavaScript, onde a crase faz parte da sintaxe do código, e quando você utilizar para destacar esse código no Markdown, ficará prejudicada a elegibilidade da escrita.
+
+Para contornar isso basta utilizar duas crases (`) no início, e duas no final da sentença. Assim será mostrado corretamente a crase onde estiver sendo usada no código.
+
+Exemplo: ``const message = `Meu nome é ${nome}`;``
+
+## Exemlpo em bloco
+Pode-se destacar todo um bloco de código utilizando o TAB nesse bloco.
+
+    // login.js
+
+    const username = 'joaosilva';
+    const password = 'secret';
+
+    login (username, password);
+
+Também pode destacar sem utilizar o TAB. Basta colocar três crases (```) no início e três no final do bloco.
+
+```
+// login.js
+
+const username = 'joaosilva';
+const password = 'secret';
+
+login (username, password);
+```
+
+## Syntax Highlighting
+Para "acender" o bloco de código, informando qual linguágem é a escrita do código, basta escrever o nome da linguágem ou um alias (js para JavaScript) após as três primeiras crases (```).
+
+```JavaScript
+// login.js
+
+const username = 'joaosilva';
+const password = 'secret';
+
+login (username, password);
+```
+
+# Github
+
+Truques que são aceitos escrevendo Markdown no Github
+
+## Lista de itens com checkbox marcado ou descarmado.
+Pode-se usar no Github um chekbox marcado ou desmarcado, como uma lista de itens. Basta criar uma lista com asterisco (*) na frente do item seguido de um par de colchetes [ ] (ha um espaço dentro desse par de colchetes), e o nome do item. Se colocar um X dentro dos colchetes em vez do espaço, o checkbox ficará marcado, caso deixe apenas com o espaço entre os colchetes, ficará desmarcado.
+
+* [x] Item 01
+* [ ] Item 01
+* [X] Item 01
+
+# Exemplos
+
+[![NPM Version][npm-badge]][npm-url]
+[![Downloads][npm-downloads-badge]][npm-downloads-url]
+[![Travis Status][travis-badge]][travis-url]
+[![CircleCI Status][circleci-badge]][circleci-url]
+[![AppVeyor Status][appveyor-badge]][appveyor-url]
+[![Coveralls Status][coveralls-badge]][coveralls-url]
+[![License][license-badge]][license-url]
+
+
+[npm-badge]: https://img.shields.io/npm/v/npm.svg
+[npm-url]: https://github.com/npm/cli/releases/tag/v6.9.0
+[npm-downloads-badge]: https://img.shields.io/npm/dt/localeval.svg
+[npm-downloads-url]: https://www.npmjs.com
+[travis-badge]: https://travis-ci.org/robertoachar/generator-oss-project.svg?branch=master
+[travis-url]: https://travis-ci.org/robertoachar/generator-oss-project
+[circleci-badge]: https://circleci.com/gh/robertoachar/generator-oss-project/tree/master.svg?style=shield
+[circleci-url]: https://circleci.com/gh/robertoachar/generator-oss-project
+[appveyor-badge]: https://ci.appveyor.com/api/projects/status/github/robertoachar/generator-oss-project?branch=master&svg=true
+[appveyor-url]: https://ci.appveyor.com/project/robertoachar/generator-oss-project
+[coveralls-badge]: https://coveralls.io/repos/github/robertoachar/generator-oss-project/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/robertoachar/generator-oss-project?branch=master
+[license-badge]: https://img.shields.io/github/license/robertoachar/generator-oss-project.svg
+[license-url]: https://opensource.org/licenses/MIT

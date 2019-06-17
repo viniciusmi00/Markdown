@@ -129,10 +129,15 @@ Também pode utilizar variável para mostrar um link, basta atribuir uma variáv
 
 # Imagens
 
-Para colocar uma imagem basta inserir uma exclamação (!) seguida de um par de colchetes [ ] e parênteses ( ). Dentro dos colchetes [ ] coloca-se o texto que deseja exibir ao deixar o mouse sobre a imagem, e dentro dos parênteses ( ) coloca-se o endereço da imagem.
+Para colocar uma imagem basta inserir uma exclamação (!) seguida de um par de colchetes [ ] e parênteses ( ). Dentro dos colchetes [ ] coloca-se o texto que deseja exibir ao deixar o mouse sobre a imagem, e dentro dos parênteses ( ) coloca-se o endereço da imagem, pode ser uma URL ou um caminho para pasta local.
 
 ![Markdown](https://markdown-here.com/img/logo-2015/austin.png)
-> Logo do site https://markdown-here.com
+>URL: Logo do site https://markdown-here.com
+
+![Logo em Arquivo](./Logo.png)
+>Logo: Arquivo na pasta.
+
+
 
 
 ## Imagem com variável

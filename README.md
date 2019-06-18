@@ -50,6 +50,17 @@ Para colocar um ~~riscado~~ na palavra ou sentença bastar adicionar dois tis (~
 > Para fazer um **comentário** _(citação)_, basta colocar um simbolo de maior (>) no início da sentença.
 
 
+## Notas de Rodapé
+Uma nota de rodapé tem dois elementos. Uma marcação no texto que irá se tornar um número superscript e uma definição da nota de rodapé que aparecerá no final do documento. Um simles exemplo:
+
+Essa parte vai no texto, com o número 1 como superscrip.
+Ao clicar nele, levará ao rodapé.[^1]
+
+[^1]: Essa parte é o rodapé onde o superscript 1 nos trouxe.
+
+Pode-se colocar ambas as linhas juntas, sem a necessidade de colocar a parte do rodapé no final do documento original. O próprio Markdown já reconhece e na visualização final já deixa a segunda parte como rodapé.
+
+
 
 # Linhas horizontais
 Para utilizar linhas horizontais, deve-se colocar a partir de três asteriscos (*), três traços (-) ou três underlines (-), juntos ou sepados.

@@ -60,6 +60,7 @@ Ao clicar nele, levará ao rodapé.[^1]
 
 Pode-se colocar ambas as linhas juntas, sem a necessidade de colocar a parte do rodapé no final do documento original. O próprio Markdown já reconhece e na visualização final já deixa a segunda parte como rodapé.
 
+>As notas de rodapé não são reconhecidas no Github.
 
 
 # Linhas horizontais
